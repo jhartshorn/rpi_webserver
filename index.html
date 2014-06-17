@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="default.css" media="screen" />
+		<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+		<script src='js/showhide.js'></script>
+	</head>
+
+	<body>
+		<div id='side_cont'>
+			<div id='main_cont'>
+				<div id='main'>
+					<h1>Raspberry Pi</h1>
+					<div>
+						<img src="img/rpi.jpg" width=300 height=240>
+					</div>
+			
+					<h3 class='hideshow'>Table Of Contents</h3>
+					<ol class='hscontent'>
+						<li><a href="#torrent">Torrent Box</a></li>
+						<li><a href="#netdrive">Network Drive</a></li>
+						<li><a href="#media">Media Server</a></li>
+					</ol>
+			
+					<h2 id="torrent" class='hideshow'>1. Torrent Box</h2>
+					<div class="hscontent">
+						<p>Download torrents on the Raspberry Pi. Completed downloads can be found in the /torrents/complete/ folder of the network drive.</p>
+						<h3>Torrent Control Interface</h3>
+						<a href="http://192.168.1.2:9091/transmission/web/">Transmission Bittorrent Web Interface</a>
+						<h3>Chrome Extension</h3>
+						<p>Easily add magnet links to the Raspberry Pi Torrent Box using <a href="https://chrome.google.com/webstore/detail/torrent-to-transmission/fjfeeonbeiocojnpfboldpckcgcfknll">this extension for Google Chrome.</a></p>
+						<p>After installation right click on it's icon and select 'Options'. Set the following options:</p>
+						<table>
+							<tr>
+								<td>Option</td>
+								<td>Set To:</td>
+							</tr>
+							<tr>
+								<td>RPC address</td>
+								<td>http://192.168.1.2:9091/transmission/rpc</td>
+							</tr>
+							<tr>
+								<td>WebUI address</td>
+								<td>http://192.168.1.2:9091</td>
+							</tr>
+						</table>
+						<p>To add a torrent simply right click on the magnet link and select '.torrent to Transmission'.</p>
+					</div>
+			
+					<h2 id="netdrive" class="hideshow">2. Network Drive</h2>
+					<div class="hscontent">
+						<p>The Raspberry Pi has network storage. To use this in Windows go to 'My Computer','Network','Raspberry Pi','Public'. Right clicking on 'Public' will give you the option of mapping the network storage to a drive letter(for example, Z:\).</p>
+					</div>
+			
+					<h2 id="media" class="hideshow">3. Media Server</h2>
+					<div class="hscontent">
+						<p>To use the Media Server use a DLNA compliant client. Searching for DLNA on Gogle Play and the Apple App Store will give you good results. Some clients, such as Allshare for Android are able to stream the media to the Chromecast.</p>
+					</div>
+				</div>
+		
+				<div id='sidebar'>
+					<h2 id="links">Links</h2>
+				
+					<ul id='linkslist'>
+						<li><a href="info.php">phpInfo</a></li>
+						<li><a href="http://192.168.1.2:9091/transmission/web/">Bittorrent Web Interface</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id='footer'>
+			<h3>Copyright 2014 James Hartshorn</h3>
+		</div>
+	</body>
+</html>
